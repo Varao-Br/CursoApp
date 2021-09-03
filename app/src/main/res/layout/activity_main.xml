@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_ciencnat"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:text="Ciências da natureza"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_cienchumanas"
+        app:layout_constraintEnd_toStartOf="@+id/bt_cienchumanas"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_cienchumanas"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:text="Ciências Humanas"
+        app:layout_constraintBottom_toTopOf="@+id/bt_redacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_ciencnat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_lingcodetec"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="118dp"
+        android:text="Linguagens, Códigos e Suas Tecnologias"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_redacao" />
+
+    <Button
+        android:id="@+id/bt_mat"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:text="Matemática"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_redacao"
+        app:layout_constraintEnd_toStartOf="@+id/bt_redacao"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_redacao"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="63dp"
+        android:text="Redação"
+        app:layout_constraintBottom_toTopOf="@+id/bt_lingcodetec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_mat"
+        app:layout_constraintTop_toBottomOf="@+id/bt_cienchumanas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
