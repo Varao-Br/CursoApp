@@ -18,24 +18,14 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter></activity>
 
-        <activity
-            android:name=".Linguagem"
-            android:label="Linguagens, Códigos e Suas Tecnologias" />
-        <activity
-            android:name=".Redacao"/>
-        <activity
-            android:name=".Matematica"
-            android:label="Matemática" />
-        <activity
-            android:name=".CienciasHumanas"
-            android:label="Ciências Humanas" />
-        <activity
-            android:name=".CienciasdaNatureza"
-            android:label="Ciências da Natureza" />
+        <activity android:name=".Linguagem"/>
+        <activity android:name=".Redacao"/>
+        <activity android:name=".Matematica" />
+        <activity android:name=".CienciasHumanas" />
+        <activity android:name=".CienciasdaNatureza" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="Curso preparatório Efésios">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
