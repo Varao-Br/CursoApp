@@ -9,24 +9,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EfésiosCurso">
         <activity
-            android:name=".Linguagem"
-            android:label="Linguagens, Códigos e Suas Tecnologias"
-            android:exported="true" />
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+
         <activity
-            android:name=".Redacao"
-            android:label="Redação"
-            android:exported="true" />
+            android:name=".Linguagem"
+            android:label="Linguagens, Códigos e Suas Tecnologias" />
+        <activity
+            android:name=".Redacao"/>
         <activity
             android:name=".Matematica"
-            android:label="Matemática"
-            android:exported="true" />
+            android:label="Matemática" />
         <activity
             android:name=".CienciasHumanas"
-            android:exported="true"
             android:label="Ciências Humanas" />
         <activity
             android:name=".CienciasdaNatureza"
-            android:exported="true"
             android:label="Ciências da Natureza" />
         <activity
             android:name=".MainActivity"
@@ -35,7 +39,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
